@@ -37,6 +37,6 @@ public class SpigotValueDisplaySettings implements ValueDisplay.Settings {
     public String displayNullValue() {
         return Optional.ofNullable(map.get("null-value"))
                 .map(Object::toString)
-                .orElse("---");
+                .orElse("0");
     }
 }
